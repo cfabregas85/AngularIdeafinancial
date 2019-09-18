@@ -1,5 +1,8 @@
 .navbar {
     background-color: #4B78BC;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
