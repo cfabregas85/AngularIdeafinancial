@@ -1,0 +1,17 @@
+div.card {
+    position: relative;
+    margin: auto
+}
+
+.form-control {
+    border: 0;
+}
+
+.no-border {
+    border: 0;
+    box-shadow: none;
+}
+
+.color-draw {
+    color: forestgreen;
+}
