@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/share/navbar/navbar.component';
 import { CreditComponent } from './components/credit/credit.component';
 import { DrawmoneyComponent } from './components/drawmoney/drawmoney.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { SidebarComponent } from './components/share/sidebar/sidebar.component';
 import { NavbarDrawComponent } from './components/share/navbar-draw/navbar-draw.component';
 
 @NgModule({
@@ -16,15 +18,16 @@ import { NavbarDrawComponent } from './components/share/navbar-draw/navbar-draw.
     AppComponent,
     NavbarComponent,
     CreditComponent,
-    DrawmoneyComponent,
-    NavbarDrawComponent
+    DrawmoneyComponent,    
+    SidebarComponent, NavbarDrawComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

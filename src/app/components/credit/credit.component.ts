@@ -10,10 +10,10 @@ import { TransactionModel } from '../models/transaction.model';
 })
 export class CreditComponent implements OnInit {
 
-  transaction = new TransactionModel();
+  transaction : TransactionModel;
 
   constructor(public cardTransaction : CardtransationService ) { 
-
+    this.transaction = new TransactionModel();
     this.cardTransaction.GetInfo().
              subscribe((resp:any)=>{
                this.transaction.id = resp.cardId;
